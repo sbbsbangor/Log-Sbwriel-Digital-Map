@@ -50,5 +50,6 @@ All you need do in order to lay out your web page is put the lines below where y
 
 ##Credits
 
-The Log Sbwriel litter map was created as a collaboration between the Snowdonia Society and SBBS Bangor. Development, programming and graphics by Dr Andrew Thomas. Copyright 2014 Snowdonia Society, SBBSBangor and Andrew Thomas.
+The Log Sbwriel litter map was created as an R&D collaboration between the Snowdonia Society and SBBS, Bangor University, through the WISE Network project (http://www.wisenetwork.org). Development, programming and graphics by Dr Andrew Thomas. Copyright 2014 Snowdonia Society, SBBSBangor and Andrew Thomas.
+
 
