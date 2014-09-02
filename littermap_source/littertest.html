@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<style>html,body{height:100%;margin:0;}</style>
+<script src="./javascript/litterlog.js" type="text/javascript"></script>
+<script src="./javascript/processing.js"></script>
+<script src="./javascript/init.js"></script>
+<title>Example GIS litter map</title>
+<meta content="example,gis,litter,map" name="keywords" />
+<meta content="Example GIS litter map" name="description" />
+
+</head>
+
+<body>
+
+  <div id="litter-title"></div>
+
+  <br>
+
+  <center>
+  <div id="litter-filter"></div>
+  </center>
+  
+  <br>
+
+  <center>
+  <div id="map-canvas"></div>
+  </center>
+  
+  <canvas width="10" height="10"></canvas>
+
+  <script type="application/processing">
+
+  void setup()
+  {
+    csvfile="litterlog.csv";
+    setlanguage(WELSH);
+    size(1,1);
+    mapsize(700,500);
+    addlitter();
+    setzooms(16,15,21);
+    finishmap();
+  }
+
+  void addlitter()
+  {
+    int c;
+    String[] csv=loadStrings(csvfile);
+    if(csv==null) alert("There's something wrong with the filename you put in the HTML file.");
+    else
+    {
+      for(c=0;c<csv.length;c++)
+      {
+        if(csv[c].indexOf("***")==-1)
+        {
+          String[] bits=split(csv[c],",");
+          if(bits.length>1)
+            addLitterMarker(float(bits[0]),float(bits[1]),bits[2]);
+        }
+      }
+    }
+  }
+
+  void draw()
+  {
+    background(255,255,255);
+  }
+
+  </script>
+  
+  <center>
+  <div id="litter-language"></div>
+  </center>
+
+  <center>
+  <div id="litter-table-horizontal"></div>
+  </center>
+  
+  <br>
+  
+  <center>
+  <a href="https://github.com/sbbsbangor" target="_blank"><img src="./images/logos.png"/></a>
+  </center>
+
+</body>
+
+</html>
+
