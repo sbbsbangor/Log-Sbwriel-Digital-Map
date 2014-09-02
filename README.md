@@ -40,11 +40,13 @@ As well as the map and Processing.js canvasses that you’ll see in the sample w
 
 All you need do in order to lay out your web page is put the lines below where you want them in your web page code using a HTML editor. If you’re new to this we suggest you use our example web page as a guide. Of course, you can also place the map and processing.js canvasses where you want them positioned too, although the processing.js one won’t show anything unless you decide to edit the code to use it to add to the visualisation. All of the HTML code to add the javascript files and canvasses can be found in our example web page.
 
+```html
 <div id="litter-title"></div>
 <div id="litter-language"></div>
 <div id="litter-filter"></div>
 <div id="litter-table-horizontal""></div>
 <div id="litter-table-vertical”></div>
+```
 
 ##Credits
 
