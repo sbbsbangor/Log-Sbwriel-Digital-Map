@@ -44,7 +44,7 @@ All you need do in order to lay out your web page is put the lines below where y
 <div id="litter-title"></div>
 <div id="litter-language"></div>
 <div id="litter-filter"></div>
-<div id="litter-table-horizontal""></div>
+<div id="litter-table-horizontal"></div>
 <div id="litter-table-vertical”></div>
 ```
 
