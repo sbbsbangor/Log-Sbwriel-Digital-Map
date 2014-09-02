@@ -8,7 +8,7 @@ This repository contains files that allow simple and quick visualisation of Log 
 
 Being based on ProcessingJS (www.processingjs.org) the Log Sbwriel visualisation should be fairly easy for beginner-programmers to explore, as well as simple to adapt for more complex visualisation needs. Also, the code is written to provide bilingual (Welsh and English) web page visualisation elements, as SBBS Bangor are located in North Wales. If you live outside of Wales then it should be straightforward for you to edit the text descriptions in our Javascript file to your own language.
 
-For full details of the Log Sbwriel app please look at this page on our GitHub repository: https://github.com/sbbsbangor/androidlitterlogger. And to get the Log Sbwriel Android app code and files please visit this page: https://github.com/sbbsbangor/Log-Sbwriel-Android-App.
+For full details of the Log Sbwriel open-source Android app please look at this page on our GitHub repository: https://github.com/sbbsbangor/Log-Sbwriel-Android-App.
 
 To read more information about the Snowdonia Society’s Snowdon Tidy initiative please visit this page: http://www.snowdonia-society.org.uk/news.php?n_id=443.
 
